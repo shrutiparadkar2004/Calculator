@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Calculator</title>
+    <style>
+    .calculator-container
+    {
+        background-color:  #333333;
+        width: 400px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        border-radius: 10px;
+        padding: 10px;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        box-shadow: #999;
+        box-shadow: inset 0 0 10px 10px rgba(0,0,0,0.35),
+        0 5px 5px rgba(0,0,0,0.5),
+        0 15px 25px rgba(0,0,0,0.35);
+        border-top: 1px solid #ccc;
+    }
+
+    .calulator-screen
+    {
+        border: 2px solid black;
+        font-size: 50px;
+        width: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color:#ecffb3 ;
+        margin-bottom: 10px;
+        box-shadow: inset 0 0 6px 1px ;
+    }
+
+    .button-row
+    {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 25px;
+    }
+
+    .cal-button
+    {
+        font-size: 18px;
+        justify-content: center;
+        background-color:#b3b3b3 ;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 40px;
+        width: 60px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        border: 2px solid #222;
+        display: flex;
+        color: #999;
+        background: linear-gradient(#555353,#363535);
+        box-shadow: inset 0 6px 1px 0 rgba(0,0,0,0.35),
+        0 5px 5px rgba(0,0,0,0.5),
+        0 15px 25px rgba(0,0,0,0.35);
+        border-top: 1px solid #ccc;
+    }
+
+    .cal-button:hover
+    {  
+       background-color: #ccc; 
+      font-size: 20px;
+      transition: 0.5s;
+    }
+
+    .brand-name
+    {
+        color: #999;
+        text-align: right;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .small-screen
+    {
+        height: 20px;
+        width: 20px;
+        border: 1px solid black;
+        border-top: 1px solid #ccc;
+        display: flex;
+        justify-content: end;
+        background-color: #ff9933;
+    }
+
+    .small-screen-container
+    {
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
+    }
+
+    .bg-btn
+    {
+        background-color: #ff1a1a;
+        color: white;
+    }
+
+    </style> 
+</head>
+
+<body>
+
+    <div class="calculator-container"> 
+
+        <p class="brand-name">casio</p>
+
+        <input type="text" class="calulator-screen"/>
+
+        <div class="small-screen-container">
+        <div class="small-screen"></div>
+        <div class="small-screen"></div>
+        <div class="small-screen"></div>
+        <div class="small-screen"></div>
+        </div>
+
+        <div class="button-row">
+            <button class="cal-button">CLR</button>
+            <button class="cal-button"> M- </button>
+            <button class="cal-button"> M+ </button>
+            <button class="cal-button"> +/- </button>
+            <button class="cal-button"> ON </button>
+        </div>
+
+        <div class="button-row">
+            <button class="cal-button"> 7 </button>
+            <button class="cal-button"> 8 </button>
+            <button class="cal-button"> 9 </button>
+            <button class="cal-button"> % </button>
+            <button class="cal-button"> —→ </button>     
+        </div>
+
+        <div class="button-row">
+            <button class="cal-button"> 4 </button>
+            <button class="cal-button"> 5 </button>
+            <button class="cal-button"> 6 </button>
+            <button class="cal-button"> + </button>
+            <button class="cal-button"> ÷ </button> 
+        </div>
+
+        <div class="button-row">
+            <button class="cal-button"> 1 </button>
+            <button class="cal-button"> 2 </button>
+            <button class="cal-button"> 3 </button>
+            <button class="cal-button"> × </button>
+            <button class="cal-button"> ^ </button>       
+        </div>
+
+        <div class="button-row">
+            <button class="cal-button"> 0 </button>
+            <button class="cal-button"> 00 </button>
+            <button class="cal-button"> . </button>
+            <button class="cal-button"> - </button>
+            <button class="cal-button"> = </button>                                               
+        </div>
+    </div>
+</body>
+</html>
